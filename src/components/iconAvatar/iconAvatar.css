@@ -1,0 +1,12 @@
+.login-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #eaeaea;
+    color: #333;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 50%;
+  }
