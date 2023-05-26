@@ -1,0 +1,11 @@
+.container-admin {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 4vw 9.5fr;
+  position: relative;
+}
+
+.content-admin {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}

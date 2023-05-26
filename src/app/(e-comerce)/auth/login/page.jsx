@@ -43,8 +43,6 @@ export default function LoginPage() {
           </Button>
         </Form>
       </Col>
-
-      {user && <h4>Hola, {user.name}</h4>}
     </Container>
   );
 }

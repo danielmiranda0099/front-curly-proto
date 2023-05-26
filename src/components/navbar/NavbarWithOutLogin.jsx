@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Nav, NavDropdown } from "@/bootstrap";
+import { Nav } from "@/bootstrap";
 
 export function NavbarWithOutLogin() {
   return (

@@ -14,20 +14,24 @@ import { NavbarLogin } from "./NavbarLogin";
 import { NavbarWithOutLogin } from "./NavbarWithOutLogin";
 
 import "./navbar.css";
+import { CarIcon } from "@/icons";
 
-export function Navbar({ brand, staticLinks }) {
+export function Navbar({ brand, staticLinks, bg="light", navbarClass, navbarStyle={} }) {
   let { user, logoutUser } = useContext(AuthContext);
 
   let isDesktopOrLarger = useDesktopOrLarger();
 
   return (
     <NavbarBoots
-      bg="light"
+      
       expand="lg"
-      className={isDesktopOrLarger ? "" : "flex flex-row"}
+      className={(isDesktopOrLarger ? "" : "flex flex-row") + ` ${navbarClass}`}
+      style={navbarStyle}
     >
       <Container
-        containerClass={ isDesktopOrLarger ? "flex flex-row flex-end" : "flex flex-row"}
+        containerClass={
+          isDesktopOrLarger ? "flex flex-row flex-end" : "flex flex-row"
+        }
       >
         <NavbarBoots.Brand as={Link} href="/">
           {brand}
@@ -44,9 +48,14 @@ export function Navbar({ brand, staticLinks }) {
               </Container>
 
               <Container
-                containerClass={isDesktopOrLarger ? "flex flex-row flex-end" : ""}
+                containerClass={
+                  isDesktopOrLarger ? "flex flex-row flex-end" : ""
+                }
               >
                 <Nav>
+                  <Nav.Link as={Link} href="#">
+                    <CarIcon size={40}/>
+                  </Nav.Link>
                   {user ? (
                     <NavbarLogin user={user} logoutUser={logoutUser} />
                   ) : (
