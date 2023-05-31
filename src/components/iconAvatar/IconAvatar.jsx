@@ -1,5 +1,6 @@
 import './iconAvatar.css';
 
+//TODO: AGREGAR INDEX.JS
 export function IconAvatar({ name }) {
   function getInitials(name) {
     const words = name.split(" "); // Dividir la cadena en palabras

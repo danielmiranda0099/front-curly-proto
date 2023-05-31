@@ -1,4 +1,4 @@
-export function CarIcon({ color="white", size = 32 }) {
+export function CarIcon({ color = "white", size = 32 }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ export function CarIcon({ color="white", size = 32 }) {
   );
 }
 
-export function SettingIcon({ color="white", size = 32 }) {
+export function SettingIcon({ color = "white", size = 32 }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,31 +28,37 @@ export function SettingIcon({ color="white", size = 32 }) {
   );
 }
 
-export function ChartIcon({ color="white", size = 32 }) {
+export function ChartIcon({ color = "white", size = 32 }) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height="100%"
-      viewBox="0 0 24 24"
-      style={{ fill: color }}
-    >
+    <svg width={size} height="100%" viewBox="0 0 24 24" style={{ fill: color }}>
       <path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path>
       <path d="M15.293 14.707a.999.999 0 0 0 1.414 0l5-5-1.414-1.414L16 12.586l-2.293-2.293a.999.999 0 0 0-1.414 0l-5 5 1.414 1.414L13 12.414l2.293 2.293z"></path>
     </svg>
   );
 }
 
-export function ArrowIcon({ color="white", size = 32, rotate=0 }) {
+export function ArrowIcon({ color = "white", size = 32, rotate = 0 }) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width={size}
       height="100%"
       viewBox="0 0 24 24"
-      style={{ fill: color }}
+      style={{ fill: color, transform: `rotate(${rotate}deg)` }}
     >
       <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+    </svg>
+  );
+}
+
+export function DashboardIcon({ color = "white", size = 32, rotate = 0 }) {
+  return (
+    <svg
+      width={size}
+      height="100%"
+      viewBox="0 0 24 24"
+      style={{ fill: color, transform: `rotate(${rotate}deg)` }}
+    >
+      <path d="M4 13h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1zm-1 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v4zm10 0a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v7zm1-10h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1z"></path>
     </svg>
   );
 }

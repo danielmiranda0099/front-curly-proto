@@ -24,7 +24,7 @@
   background-color: #eae2e1;
 }
 .sidebar:hover {
-  width: 260px; /* Ancho expandido */
+  width: 300px; /* Ancho expandido */
 }
 
 .sidebar-content-link{

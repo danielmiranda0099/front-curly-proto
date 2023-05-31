@@ -5,7 +5,7 @@ import { AuthContext } from "@/context/Auth.context";
 import { Container } from "@/components";
 
 export default function LoginPage() {
-  let { loginUser, user } = useContext(AuthContext);
+  let { loginUser} = useContext(AuthContext);
 
   const loginHandle = (event) => {
     event.preventDefault();

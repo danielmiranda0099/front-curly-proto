@@ -3,9 +3,9 @@ import { Nav } from "@/bootstrap";
 
 export function NavLinks({links}) {
     return(
-        links.map( ({targer, route}) => (
+        links.map( ({label, route}) => (
             <Nav.Link as={Link} href={route} key={route}>
-                {targer}
+                {label}
             </Nav.Link>
         ))
     )
