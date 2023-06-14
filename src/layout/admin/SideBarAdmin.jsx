@@ -30,7 +30,11 @@ export function SideBarAdmin() {
         />
         <SideBarLink
           label={"Productos"}
-          onClickLabel={() => setSection(ADMIN_ROUTES.PRODUCTS_LINKS[0])}
+          onClickLabel={() => {
+            setLinks(ADMIN_ROUTES.PRODUCTS_LINKS);
+            setSection(ADMIN_ROUTES.PRODUCTS_LINKS[0]);
+          }}
+          links={ADMIN_ROUTES.PRODUCTS_LINKS}
           icon={<CarIcon size={"2.7vw"} />}
         />
         <SideBarLink
