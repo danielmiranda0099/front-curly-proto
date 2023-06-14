@@ -1,5 +1,11 @@
 export const ADMIN_ROOT = '/admin'
 export const ADMIN_ROUTES = {
+  DASHBOARD_LINKS: [
+    {
+      label: "Dashboard",
+      route: `${ADMIN_ROOT}/`,
+    }
+  ],
   CONTABLE_LINKS: [
     {
       label: "Contabilidad",
@@ -10,14 +16,24 @@ export const ADMIN_ROUTES = {
       route: `${ADMIN_ROOT}/caja`,
     },
   ],
-  SETTINGS_LINKS: [
+  PRODUCTS_LINKS: [
     {
-      label: "Cuenta",
+      label: "Productos",
       route: `${ADMIN_ROOT}#1`,
     },
+  ],
+  SETTINGS_LINKS: [
     {
       label: "Settings",
       route: `${ADMIN_ROOT}#2`,
+    },
+    {
+      label: "Cuenta",
+      route: `${ADMIN_ROOT}#3`,
+    },
+    {
+      label: "Settings",
+      route: `${ADMIN_ROOT}#4`,
     },
   ],
 };

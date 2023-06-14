@@ -1,6 +1,10 @@
 export const ECOMERCE_ROUTES = {
   HOME_LINKS:  [
     {
+      label: "Rincon Curly",
+      route: "/"
+    },
+    {
       label: "Home",
       route: "/"
     },

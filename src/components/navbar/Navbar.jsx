@@ -16,7 +16,7 @@ import { NavbarWithOutLogin } from "./NavbarWithOutLogin";
 import "./navbar.css";
 import { CarIcon } from "@/icons";
 
-export function Navbar({ brand, staticLinks, bg="light", navbarClass, navbarStyle={} }) {
+export function Navbar({ brand, staticLinks, staticLinksRight, bg="light", navbarClass, navbarStyle={} }) {
   let { user, logoutUser } = useContext(AuthContext);
 
   let isDesktopOrLarger = useDesktopOrLarger();
@@ -33,8 +33,8 @@ export function Navbar({ brand, staticLinks, bg="light", navbarClass, navbarStyl
           isDesktopOrLarger ? "flex flex-row flex-end" : "flex flex-row"
         }
       >
-        <NavbarBoots.Brand as={Link} href="/">
-          {brand}
+        <NavbarBoots.Brand as={Link} href={brand.route}>
+          {brand.label}
         </NavbarBoots.Brand>
 
         <Container>
@@ -53,9 +53,13 @@ export function Navbar({ brand, staticLinks, bg="light", navbarClass, navbarStyl
                 }
               >
                 <Nav>
-                  <Nav.Link as={Link} href="#">
-                    <CarIcon size={40}/>
-                  </Nav.Link>
+                  {
+                    staticLinksRight?.map(({path, item}) => (
+                      <Nav.Link as={Link} href={path}>
+                        {item}
+                    </Nav.Link>
+                    ))
+                  }
                   {user ? (
                     <NavbarLogin user={user} logoutUser={logoutUser} />
                   ) : (

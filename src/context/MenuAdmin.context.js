@@ -6,8 +6,8 @@ import { createContext, useState } from "react";
 export const MenuAdminContext = createContext();
 
 export function MenuAdminProvider({ children }) {
-  let [links, setLinks] = useState(ADMIN_ROUTES.SETTINGS_LINKS);
-  let [section, setSection] = useState("Dashboard");
+  let [links, setLinks] = useState([]);
+  let [section, setSection] = useState(ADMIN_ROUTES.DASHBOARD_LINKS[0]);
 
   let contextData = {
     links,

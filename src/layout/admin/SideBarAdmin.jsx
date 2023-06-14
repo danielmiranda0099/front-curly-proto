@@ -15,7 +15,7 @@ export function SideBarAdmin() {
       <SideBarContentLinks>
         <SideBarLink
           label={"Dashboard"}
-          onClickLabel={() => setSection("Dashboard")}
+          onClickLabel={() => setSection(ADMIN_ROUTES.DASHBOARD_LINKS[0])}
           links={ADMIN_ROOT}
           icon={<DashboardIcon size={"2.7vw"} />}
         />
@@ -23,21 +23,21 @@ export function SideBarAdmin() {
           label={"Contabilidad"}
           onClickLabel={() => {
             setLinks(ADMIN_ROUTES.CONTABLE_LINKS);
-            setSection("Contabilidad");
+            setSection(ADMIN_ROUTES.CONTABLE_LINKS[0]);
           }}
           links={ADMIN_ROUTES.CONTABLE_LINKS}
           icon={<ChartIcon size={"2.7vw"} />}
         />
         <SideBarLink
           label={"Productos"}
-          onClickLabel={() => setSection("Dashboard")}
+          onClickLabel={() => setSection(ADMIN_ROUTES.PRODUCTS_LINKS[0])}
           icon={<CarIcon size={"2.7vw"} />}
         />
         <SideBarLink
           label={"Configuración"}
           onClickLabel={() => {
             setLinks(ADMIN_ROUTES.SETTINGS_LINKS);
-            setSection("Configuración");
+            setSection(ADMIN_ROUTES.SETTINGS_LINKS[0]);
           }}
           links={ADMIN_ROUTES.SETTINGS_LINKS}
           icon={<SettingIcon size={"2.7vw"} />}
