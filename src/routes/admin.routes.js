@@ -19,7 +19,7 @@ export const ADMIN_ROUTES = {
   PRODUCTS_LINKS: [
     {
       label: "Productos",
-      route: `${ADMIN_ROOT}#1`,
+      route: `${ADMIN_ROOT}/product`,
     },
   ],
   SETTINGS_LINKS: [
