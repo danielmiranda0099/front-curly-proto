@@ -62,3 +62,53 @@ export function DashboardIcon({ color = "white", size = 32, rotate = 0 }) {
     </svg>
   );
 }
+
+export function PlusIcon({ color = "white", size = 32, rotate = 0 }) {
+  return (
+    <svg
+      width={size}
+      height="24"
+      viewBox="0 0 24 24"
+      style={{ fill: color, transform: `rotate(${rotate}deg)` }}
+    >
+      <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path>
+    </svg>
+  );
+}
+
+export function CloseIcon({ color = "white", size = 32, rotate = 0 }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      style={{  width: size, fill: color, transform: `rotate(${rotate}deg)` }}
+    >
+      <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+    </svg>
+  );
+}
+
+export function TrashIcon({ color = "white", size = 32, rotate = 0 }) {
+  return (
+    <svg
+      width={size}
+      height="24"
+      viewBox="0 0 24 24"
+      style={{ fill: color, transform: `rotate(${rotate}deg)` }}
+    >
+      <path d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z"></path>
+    </svg>
+  );
+}
+
+export function EditIcon({ color = "white", size = 32, rotate = 0 }) {
+  return (
+    <svg
+      width={size}
+      height="24"
+      viewBox="0 0 24 24"
+      style={{ fill: color, transform: `rotate(${rotate}deg)` }}
+    >
+      <path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path>
+    </svg>
+  );
+}

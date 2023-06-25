@@ -55,7 +55,7 @@ export function Navbar({ brand, staticLinks, staticLinksRight, bg="light", navba
                 <Nav>
                   {
                     staticLinksRight?.map(({path, item}) => (
-                      <Nav.Link as={Link} href={path}>
+                      <Nav.Link as={Link} href={path} key={path}>
                         {item}
                     </Nav.Link>
                     ))
