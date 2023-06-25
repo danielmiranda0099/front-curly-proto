@@ -18,3 +18,19 @@
 .flex-end{
   justify-content: flex-end;
 }
+
+.gap-10{
+  gap: 10px;
+}
+
+.gap-15{
+  gap: 15px;
+}
+
+.gap-20{
+  gap: 20px;  
+}
+
+.gap-25{
+  gap: 25px;  
+}
